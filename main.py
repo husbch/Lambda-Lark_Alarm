@@ -57,7 +57,7 @@ def send_alert(event, context):
 		url, data=json.dumps(lark_data),
 		headers={'Content-Type': 'application/json'}
 	)
-    
+
 	try:
 		output = response.json()
 	except ValueError:
